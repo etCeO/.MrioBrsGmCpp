@@ -30,6 +30,5 @@
 ## Instructions For Running
 - To compile: g++ *.cpp -o mario.exe
 - To run: ./mario Spec.txt Log.txt
-
 - Note: "Log.txt" may be replaced with any .txt file for game play output
 - Likewise "Spec.txt" may be any .txt file read with numbers from lines 1-8
