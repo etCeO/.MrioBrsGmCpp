@@ -2,7 +2,7 @@
 
 - A game simulation inspired by Super Mario Bros. that processes world configuration data — including levels, coin distribution, and enemy placements — to model gameplay progression and generate a detailed log of Mario’s movements, interactions, and status throughout the simulation.
 
-# AUTHOR INFO
+# Author Info
 
 - Full Name: Ethan E. Lopez
 - Student ID: 2425516
