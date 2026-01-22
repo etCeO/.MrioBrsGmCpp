@@ -1,6 +1,6 @@
 # .MrioBrsGmCpp
 
-- A Not So Super Mario Bros. game simulation that takes in World information with levels, coins, and enemies and produces a log of Mario's movements and status
+- A game simulation inspired by Super Mario Bros. that processes world configuration data — including levels, coin distribution, and enemy placements — to model gameplay progression and generate a detailed log of Mario’s movements, interactions, and status throughout the simulation.
 
 # AUTHOR INFO
 
