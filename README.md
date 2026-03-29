@@ -65,6 +65,28 @@ Level 1 Start
 Level Complete
 
 Level 2 Start
-- ...
+...
 
 Game Over
+
+## Input Format
+
+The file named "Spec.txt" is used to specify the game world's structure and parameters.
+
+### Expected Structure
+---
+
+Configuration values and levels are included in the file. 
+- Values are usually included in the first 8 lines of the file.
+
+#### Example Format
+
+
+
+#### Rules
+
+1. Configuration values are to be numeric.
+2. Grid size is used to determine the dimensions for levels.
+3. Probability values should sum to 1.0.
+4. Space in the grid is assumed to be empty.
+5. Random seed is used to generate random values.
