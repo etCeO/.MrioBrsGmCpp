@@ -167,7 +167,7 @@ Game Ends When:
 ### Data Structures Used
 ---
 
-1. Vectors/Arrays
+1. Arrays
 
 - Levels and grid data
 
