@@ -81,7 +81,14 @@ Configuration values and levels are included in the file.
 
 #### Example Format
 
-
+- 2   // number of levels
+- 5   // grid size NxN
+- 3   // number of lives
+- 20  // probability of obtaining coins
+- 20  // probability of enemies
+- 20  // probability of power-ups
+- 20  // probability of mushrooms
+- 20  // probability of empty spaces
 
 #### Rules
 
@@ -90,3 +97,80 @@ Configuration values and levels are included in the file.
 3. Probability values should sum to 1.0.
 4. Space in the grid is assumed to be empty.
 5. Random seed is used to generate random values.
+
+## Implementation Details
+
+#### Core Components
+
+1. File Processing
+
+- FileProcessor processes input values and initializes simulation parameters
+- Validates structure and converts raw input into usable data
+
+2. World Representation
+
+World comprises of:
+- A set of Level objects
+- Global parameters, for example, total levels
+
+3. Level Structure
+
+- Each Level is represented as a grid of cells
+- Each cell comprises
+   - Coin
+   - Enemy
+   - Empty
+   - etc.
+
+Grid is randomly generated using probabilities
+
+4. Mario Class
+
+- Tracks Mario’s:
+    - State
+    - Current Position
+    - Number of lives
+    - Coin Count
+    - Movement History
+
+Also Processes Mario’s Interactions:
+- Coin collection
+- Fighting enemies
+- Losing lives
+- Completing levels
+
+### Algorithm
+---
+
+1. Initialize World and Mario
+
+For each level:
+- Place Mario at the start
+- Move Mario
+    - Move direction could be deterministic or random
+- If cell content is
+   - Coin
+      - Increment coin count
+   - Enemy
+      - Fight enemy
+   - Empty
+      - Do nothing
+- Log action
+- Repeat until
+
+Level is complete.
+
+Game Ends When:
+- Mario defeats boss.
+- Mario runs out of lives.
+
+### Data Structures Used
+---
+
+1. Vectors/Arrays
+
+- Levels and grid data
+
+2. 2D Grid
+- For each level
+- Represents the world
