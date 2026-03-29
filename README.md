@@ -53,19 +53,18 @@ The program simulates Mario's progression through a structured world of levels.
 
 - ./mario Spec.txt Log.txt
 
-#### Example Output (Log.txt):
+#### Example Output (Log.txt – Conceptual):
 
-*   Level 1 Start
-*   Mario moved right
-*   Encountered Goomba, Mario defeated enemy
-*   Collected coin, Coins: 5
+Level 1 Start
+- Mario moved right
+- Encountered Goomba, Mario defeated enemy
+- Collected coin, Coins: 5
+- Mario moved down
+- Encountered enemy, Mario lost a life
 
-*   Mario moved down
-*   Encountered enemy, Mario lost a life
+Level Complete
 
-*   Level Complete
+Level 2 Start
+- ...
 
-*   Level 2 Start
-*   ...
-
-*   Game Over
+Game Over
